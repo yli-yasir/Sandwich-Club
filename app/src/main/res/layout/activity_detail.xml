@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udacity.sandwichclub.DetailActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/sandwich_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/sandwich_picture_content_description"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/also_known_as_tv"
+            android:text="@string/also_known_as_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/DetailsBody"
+            />
+
+
+        <TextView
+            android:id="@+id/place_of_origin_tv"
+            android:text="@string/place_of_origin_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/DetailsBody"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/ingredients_tv"
+            android:text="@string/ingredients_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/DetailsBody"
+
+            />
+
+
+        <TextView
+            android:id="@+id/description_tv"
+            android:text="@string/description_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/DetailsBody"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>
